@@ -91,7 +91,7 @@ const Providers: React.FC = ({ children }) => {
             walletconnect: { rpcUrl: config.defaultProvider },
             walletlink: {
               url: config.defaultProvider,
-              appName: 'CaffeineFund Finance',
+              appName: 'MoonShine Finance',
               appLogoUrl: 'https://github.com/tombfinance/tombfinance-assets/blob/master/logo_tomb_NoBG.png',
             },
           }}

@@ -620,7 +620,7 @@ contract MscGenesisRewardPool {
 
     uint256 public constant FEE = 1; // 1%
     address public feeWallet1;
-    address public feeWallet2 = 0x6dDaf66b0bB77280ACcA1f1aD877001a2440f922;
+    address public feeWallet2 = 0x1234b0b2E3e91202f9A2437B6B0813857E111486;
 
     mapping (address => bool) public whiteListed;
     uint256  public constant whiteListPeriod = 10800; 

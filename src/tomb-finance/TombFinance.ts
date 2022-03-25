@@ -14,7 +14,7 @@ import moment from 'moment';
 import { parseUnits } from 'ethers/lib/utils';
 import { AVAX_TICKER, TRADERJOE_ROUTER_ADDR, TOMB_TICKER } from '../utils/constants';
 /**
- * An API module of CaffeineFund Finance contracts.
+ * An API module of MoonShine Finance contracts.
  * All contract-interacting domain logic should be defined in here.
  */
 export class TombFinance {
