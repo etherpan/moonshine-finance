@@ -159,7 +159,7 @@ const Home = () => {
         <Grid item xs={12} sm={8}>
           <Paper>
             <Box p={4}>
-              <h2>Welcome to CaffeineFund!</h2>
+              <h2>Welcome to MoonShine!</h2>
               <p>Pegged to the price of 0.1 AVAX via seigniorage.</p>
               <p>
 							  <StyledLink href="/farms" style={{ color: '#05147c' }} >Stake</StyledLink> your MSC-AVAX LP tokens to earn MSHARE seigniorage rewards.
@@ -185,13 +185,13 @@ const Home = () => {
         <Grid container justifyContent="center">
             <Box mt={3} mb={1} style={{ padding: '0 10px' }}>
             <Alert variant="filled" severity="warning">
-                Do your own research before investing. Investing is risky and may result in monetary loss. CaffeineFund is beta software and may contain bugs. By using CaffeineFund, you agree that the CaffeineFund team is not responsible for any financial losses from investing in CaffeineFund.
+                Do your own research before investing. Investing is risky and may result in monetary loss. MoonShine is beta software and may contain bugs. By using MoonShine, you agree that the MoonShine team is not responsible for any financial losses from investing in MoonShine.
             </Alert>
             </Box>
         </Grid>
 
         <Grid item xs={12} sm={12} align="center">
-          <Button target="_blank" href="https://twitter.com/CaffeineFund" style={{ margin: '0 10px', backgroundColor:'#1da1f2', padding:'8px 15px' }}>
+          <Button target="_blank" href="https://twitter.com/MoonShine" style={{ margin: '0 10px', backgroundColor:'#1da1f2', padding:'8px 15px' }}>
             <img alt="twitter" src={TwitterImage} className={classes.img} style={{marginRight:'10px'}}/>
             Twitter
           </Button>
@@ -282,8 +282,6 @@ const Home = () => {
                   ${tombPriceInDollars ? tombPriceInDollars : '-.--'}
                 </span>
               </Box>
-              <Button>Buy</Button>
-              <Button>Chart</Button>
               <span style={{ fontSize: '14px' }}>
                 Market Cap: ${(tombCirculatingSupply * tombPriceInDollars).toFixed(2)} <br />
                 Circulating Supply: {tombCirculatingSupply} <br />

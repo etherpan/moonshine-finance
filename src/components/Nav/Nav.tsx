@@ -106,7 +106,7 @@ const Nav = () => {
 					<>
 						<Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
 							<Link to="/" color="inherit" className={classes.brandLink}>
-                <img width="300px" alt="caffeinefundlogo" src={banner}></img>
+                <img width="300px" alt="moonshinelogo" src={banner}></img>
 							</Link>
 						</Typography>
 						{/* <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
@@ -144,7 +144,7 @@ const Nav = () => {
 							<a target="_blank" href="https://www.devilfinance.io" className={classes.link}>
 								Vaults
 							</a>
-              <a target="_blank" rel="noopener noreferrer" href="https://caffeinefund.gitbook.io/caffeinefund-finance/" className={classes.link}>
+              <a target="_blank" rel="noopener noreferrer" href="https://moonshine.gitbook.io/moonshine-finance/" className={classes.link}>
                 Docs
               </a>
               <a target="_blank" rel="noopener noreferrer" href="https://3omb.finance/" className={classes.link}>
@@ -165,7 +165,7 @@ const Nav = () => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              CaffeineFund 
+              MoonShine 
             </Typography>
 
             <Drawer
@@ -202,7 +202,7 @@ const Nav = () => {
                 <ListItem button component="a" href="https://snapshot.org/#/forgiving.forg.eth">
                   <ListItemText>GOVERNANCE</ListItemText>
                 </ListItem>
-                <ListItem button component="a" href="https://caffeinefund.gitbook.io/caffeinefund-finance/">
+                <ListItem button component="a" href="https://moonshine.gitbook.io/moonshine-finance/">
                   <ListItemText>DOCS</ListItemText>
                 </ListItem>
                 <ListItem button component="a" href="https://3omb.finance/">
