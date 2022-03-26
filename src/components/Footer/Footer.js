@@ -48,7 +48,7 @@ const Footer = () => {
 						</Typography>
 					</Grid>
 					<Grid item xs={6} style={{ textAlign: 'right' }}>
-						<a
+						{/* <a
 							href="https://twitter.com/MoonShine"
 							rel="noopener noreferrer"
 							target="_blank"
@@ -56,7 +56,7 @@ const Footer = () => {
 						>
 							<img alt="twitter" src={TwitterImage} className={classes.img} />
 						</a>
-						{/* <a href="https://bit.ly/3AUcaBI" rel="noopener noreferrer" target="_blank" className={classes.link}>
+						<a href="https://bit.ly/3AUcaBI" rel="noopener noreferrer" target="_blank" className={classes.link}>
 							<img alt="telegram" src={TelegramImage} className={classes.img} />
 						</a>
 						<a
@@ -67,7 +67,7 @@ const Footer = () => {
 						>
 							<img alt="github" src={GithubImage} className={classes.img} />
 						</a> */}
-						<a href="https://discord.gg/9BV3bTd646" rel="noopener noreferrer" target="_blank" className={classes.link}>
+						<a href="https://discord.gg/MEjYBkq6N2" rel="noopener noreferrer" target="_blank" className={classes.link}>
 							<img alt="discord" src={DiscordImage} className={classes.img} />
 						</a>
 					</Grid>

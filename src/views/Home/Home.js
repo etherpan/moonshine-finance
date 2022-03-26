@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import moment from 'moment';
 import Page from '../../components/Page';
-// import HomeImage from '../../assets/img/background.png';
+import HomeImage from '../../assets/img/home.jpg';
 import CashImage from '../../assets/img/MSC.png';
 import Image from 'material-ui-image';
 import styled from 'styled-components';
 import { Alert } from '@material-ui/lab';
-// import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import CountUp from 'react-countup';
 import CardIcon from '../../components/CardIcon';
 import TokenSymbol from '../../components/TokenSymbol';
@@ -31,12 +31,12 @@ import ZapModal from '../Bank/components/ZapModal';
 import { makeStyles } from '@material-ui/core/styles';
 import useTombFinance from '../../hooks/useTombFinance';
 
-// const BackgroundImage = createGlobalStyle`
-//   body {
-//     background: url(${HomeImage}) no-repeat !important;
-//     background-size: cover !important;
-//   }
-// `;
+const BackgroundImage = createGlobalStyle`
+  body {
+    background: url(${HomeImage}) no-repeat !important;
+    background-size: cover !important;
+  }
+`;
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -148,7 +148,7 @@ const Home = () => {
 
   return (
     <Page>
-      {/* <BackgroundImage /> */}
+      <BackgroundImage />
       <Grid container spacing={3}>
         {/* Logo */}
         <Grid container item xs={12} sm={4} justifyContent="center">
@@ -179,6 +179,10 @@ const Home = () => {
                   Genesis Pools Launch In: <ProgressCountdown base={moment().toDate()} hideBar={true} deadline={from} description="Pool Start" />
                 </div> : null 
               }
+              <Button target="_blank" href="https://discord.gg/9BV3bTd646" style={{ marginTop: '20px', background:'#5865f2', padding:'8px 15px'  }}>
+                <img alt="discord" src={DiscordImage} className={classes.img} style={{marginRight:'10px', width: '18px'}}/>
+                Discord
+              </Button>
             </Box>
           </Paper>
         </Grid>		
@@ -190,16 +194,6 @@ const Home = () => {
             </Box>
         </Grid>
 
-        <Grid item xs={12} sm={12} align="center">
-          <Button target="_blank" href="https://twitter.com/MoonShine" style={{ margin: '0 10px', backgroundColor:'#1da1f2', padding:'8px 15px' }}>
-            <img alt="twitter" src={TwitterImage} className={classes.img} style={{marginRight:'10px'}}/>
-            Twitter
-          </Button>
-          <Button target="_blank" href="https://discord.gg/9BV3bTd646" style={{ margin: '0 10px', background:'#5865f2', padding:'8px 15px'  }}>
-            <img alt="discord" src={DiscordImage} className={classes.img} style={{marginRight:'10px', width: '18px'}}/>
-            Discord
-          </Button>
-        </Grid>
         {/* TVL */}
         <Grid item xs={12} sm={4}>
           <Card>

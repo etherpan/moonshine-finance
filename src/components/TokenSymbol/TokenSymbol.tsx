@@ -17,7 +17,7 @@ import shibaLogo from '../../assets/img/mimlogo.png';
 // import tombtshares from '../../assets/img/MSC-MSHARE.png';
 
 import usdc from '../../assets/img/USDC.svg';
-import joeLogo from '../../assets/img/JOE.svg';
+import usdtLogo from '../../assets/img/USDT.svg';
 
 const logosBySymbol: { [title: string]: string } = {
   //Real tokens
@@ -35,7 +35,7 @@ const logosBySymbol: { [title: string]: string } = {
   'MSHARE-AVAX-LP': tshareAvaxLpLogo,
   // 'MSC-MSHARE-LP': tombtshares,
   'USDC': usdc,
-  JOE: joeLogo,
+  USDT: usdtLogo,
 };
 
 type LogoProps = {

@@ -11,19 +11,19 @@ import UnlockWallet from '../../components/UnlockWallet';
 // import CountDownTimer from '../../components/Countdown';
 import Page from '../../components/Page';
 import CemeteryCard from './CemeteryCard';
-// import CemeteryImage from '../../assets/img/background.png';
-// import { createGlobalStyle } from 'styled-components';
+import CemeteryImage from '../../assets/img/bond.png';
+import { createGlobalStyle } from 'styled-components';
 import useGenesisPoolAllocationTimes from '../../hooks/useGenesisPoolAllocationTimes';
 import useMeteorPoolAllocationTimes from '../../hooks/useMeteorPoolAllocationTimes';
 import ProgressCountdown from './ProgressCountdown';
 import useBanks from '../../hooks/useBanks';
 
-// const BackgroundImage = createGlobalStyle`
-//   body {
-//     background: url(${CemeteryImage}) no-repeat !important;
-//     background-size: cover !important;
-//   }
-// `;
+const BackgroundImage = createGlobalStyle`
+  body {
+    background: url(${CemeteryImage}) no-repeat !important;
+    background-size: cover !important;
+  }
+`;
 
 const Cemetery = () => {
   const [banks] = useBanks();
@@ -38,7 +38,7 @@ const Cemetery = () => {
     <Switch>
       <Page>
         <Route exact path={path}>
-          {/* <BackgroundImage /> */}
+          <BackgroundImage />
           {!!account ? (
             <Container maxWidth="lg">
               <Typography color="textPrimary" align="center" variant="h2" gutterBottom>

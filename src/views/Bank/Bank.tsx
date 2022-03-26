@@ -6,7 +6,8 @@ import { useWallet } from 'use-wallet';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { Box, Button, Card, CardContent, Typography, Grid } from '@material-ui/core';
-
+import PitImage from '../../assets/img/bond.png';
+import { createGlobalStyle } from 'styled-components';
 import PageHeader from '../../components/PageHeader';
 import Spacer from '../../components/Spacer';
 import UnlockWallet from '../../components/UnlockWallet';
@@ -29,6 +30,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const BackgroundImage = createGlobalStyle`
+  body {
+    background: url(${PitImage}) no-repeat !important;
+    background-size: cover !important;
+  }
+`;
+
 const Bank: React.FC = () => {
   useEffect(() => window.scrollTo(0, 0));
   const classes = useStyles();
@@ -41,6 +49,7 @@ const Bank: React.FC = () => {
 
   return account && bank ? (
     <>
+    <BackgroundImage />
       <PageHeader
         icon="🏦"
         // subtitle={`Deposit ${bank?.depositTokenName} and earn ${bank?.earnTokenName}`}
@@ -92,7 +101,7 @@ const Bank: React.FC = () => {
           <Spacer size="lg" />
           <div>
             <Button onClick={onRedeem} color="primary" variant="contained">
-              Claim & Withdraw
+              Claim & Withdraw1
             </Button>
           </div>
           <Spacer size="lg" />
@@ -102,7 +111,10 @@ const Bank: React.FC = () => {
   ) : !bank ? (
     <BankNotFound />
   ) : (
+    <>
+    <BackgroundImage />
     <UnlockWallet />
+    </>
   );
 };
 

@@ -26,15 +26,15 @@ import useTotalStakedOnMasonry from '../../hooks/useTotalStakedOnMasonry';
 import useClaimRewardCheck from '../../hooks/masonry/useClaimRewardCheck';
 import useWithdrawCheck from '../../hooks/masonry/useWithdrawCheck';
 import ProgressCountdown from './components/ProgressCountdown';
-// import MasonryImage from '../../assets/img/background.png';
-// import { createGlobalStyle } from 'styled-components';
+import MasonryImage from '../../assets/img/bond.png';
+import { createGlobalStyle } from 'styled-components';
 
-// const BackgroundImage = createGlobalStyle`
-//   body, html {
-//     background: url(${MasonryImage}) no-repeat !important;
-//     background-size: cover !important;
-//   }
-// `;
+const BackgroundImage = createGlobalStyle`
+  body, html {
+    background: url(${MasonryImage}) no-repeat !important;
+    background-size: cover !important;
+  }
+`;
 
 const useStyles = makeStyles((theme) => ({
   gridItem: {
@@ -61,7 +61,7 @@ const Masonry = () => {
 
   return (
     <Page>
-      {/* <BackgroundImage /> */}
+      <BackgroundImage />
       {!!account ? (
         <>
           <Typography color="textPrimary" align="center" variant="h3" gutterBottom>

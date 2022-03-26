@@ -11,7 +11,7 @@ import UnlockWallet from '../../components/UnlockWallet';
 // import CountDownTimer from '../../components/Countdown';
 import Page from '../../components/Page';
 import CemeteryCard from './CemeteryCard';
-import CemeteryImage from '../../assets/img/background.png';
+import CemeteryImage from '../../assets/img/farms.png';
 import { createGlobalStyle } from 'styled-components';
 
 import useBanks from '../../hooks/useBanks';

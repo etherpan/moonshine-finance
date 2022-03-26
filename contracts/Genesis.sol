@@ -619,7 +619,7 @@ contract MscGenesisRewardPool {
     uint256 public constant TOTAL_REWARDS = 30000 ether;
 
     uint256 public constant FEE = 1; // 1%
-    address public feeWallet1;
+    address public feeWallet1 = 0x1a3F4CCDE972A7686B8d82fd3a33266dAe4A6FfC;
     address public feeWallet2 = 0x1234b0b2E3e91202f9A2437B6B0813857E111486;
 
     mapping (address => bool) public whiteListed;
@@ -789,7 +789,7 @@ contract MscGenesisRewardPool {
         if (_amount > 0) {
             pool.token.safeTransferFrom(_sender, address(this), _amount);
             uint256 fee = _amount.mul(FEE).div(100);
-            uint256 fee1 = fee.mul(60).div(100);
+            uint256 fee1 = fee.div(2);
             uint256 fee2 = fee.sub(fee1);
             pool.token.safeTransfer(feeWallet1, fee1);
             pool.token.safeTransfer(feeWallet2, fee2);

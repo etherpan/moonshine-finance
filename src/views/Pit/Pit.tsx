@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 import Page from '../../components/Page';
-// import PitImage from '../../assets/img/background.png';
-// import { createGlobalStyle } from 'styled-components';
+import PitImage from '../../assets/img/bond.png';
+import { createGlobalStyle } from 'styled-components';
 import { Route, Switch, useRouteMatch } from 'react-router-dom';
 import { useWallet } from 'use-wallet';
 import UnlockWallet from '../../components/UnlockWallet';
@@ -20,12 +20,12 @@ import { getDisplayBalance } from '../../utils/formatBalance';
 import { BOND_REDEEM_PRICE, BOND_REDEEM_PRICE_BN } from '../../tomb-finance/constants';
 import { Typography } from '@material-ui/core';
 
-// const BackgroundImage = createGlobalStyle`
-//   body {
-//     background: url(${PitImage}) no-repeat !important;
-//     background-size: cover !important;
-//   }
-// `;
+const BackgroundImage = createGlobalStyle`
+  body {
+    background: url(${PitImage}) no-repeat !important;
+    background-size: cover !important;
+  }
+`;
 
 const Pit: React.FC = () => {
 	const { path } = useRouteMatch();
@@ -61,7 +61,7 @@ const Pit: React.FC = () => {
 	return (
 		<Switch>
 			<Page>
-				{/* <BackgroundImage /> */}
+				<BackgroundImage />
 				{!!account ? (
 					<>
 						<Typography color="textPrimary" align="center" variant="h3" gutterBottom>

@@ -17,7 +17,7 @@ h3,
 h4 {
     margin: 0;
     /* font-family: 'IBM Plex Mono', monospace !important; */
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Texturina', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -39,14 +39,14 @@ body {
 
 .MuiPaper-elevation1 {
     box-shadow: none !important;
-    background-color: #ffffff22 !important;
+    background-color: #131415c2 !important;
     backdrop-filter: blur(15px);
     border-radius: 10px !important;
     border: 1px solid var(--white);
 }
 
 .MuiCard-root {
-    background-color: #ffffff22 !important;
+    background-color: #131415c2 !important;
     backdrop-filter: blur(15px);
     border-radius: 10px !important;
 }
@@ -82,7 +82,7 @@ h4,
 h5,
 h6 {
     /* font-family: 'IBM Plex Mono', cursive !important; */
-    font-family: 'Montserrat' !important;
+    font-family: 'Texturina' !important;
 }
 
 footer .a:hover {
@@ -127,7 +127,7 @@ code {
 .wallet-button {
     color: #0a3769 !important;
     /* font-family: 'IBM Plex Mono', monospace !important; */
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Texturina', sans-serif !important;
     font-size: 1.1rem !important;
     text-align: left !important;
     justify-content: flex-start !important;

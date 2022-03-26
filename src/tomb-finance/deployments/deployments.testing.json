@@ -4111,7 +4111,7 @@
     ]
   },
   "TombAvaxRewardPool": {
-    "address": "0x9a3CCFf74a6Bf909924DD462e3c924Ff0260BC11",
+    "address": "0xfd36578548584025560Ab4520b9B3007383fc35D",
     "abi": [
       {
         "inputs": [
@@ -4597,7 +4597,7 @@
     ]
   },
   "TombUsdcRewardPool": {
-    "address": "0x9a3CCFf74a6Bf909924DD462e3c924Ff0260BC11",
+    "address": "0xfd36578548584025560Ab4520b9B3007383fc35D",
     "abi": [
       {
         "inputs": [
@@ -5083,7 +5083,7 @@
     ]
   },
   "TombMimRewardPool": {
-    "address": "0x9a3CCFf74a6Bf909924DD462e3c924Ff0260BC11",
+    "address": "0xfd36578548584025560Ab4520b9B3007383fc35D",
     "abi": [
       {
         "inputs": [
@@ -5568,8 +5568,8 @@
       }
     ]
   },
-  "TombJoeRewardPool": {
-    "address": "0x9a3CCFf74a6Bf909924DD462e3c924Ff0260BC11",
+  "TombUsdtRewardPool": {
+    "address": "0xfd36578548584025560Ab4520b9B3007383fc35D",
     "abi": [
       {
         "inputs": [
