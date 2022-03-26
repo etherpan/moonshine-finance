@@ -50,8 +50,8 @@ export class TombFinance {
     this.TOMB = new ERC20(deployments.tomb.address, provider, 'MSC');
     this.TSHARE = new ERC20(deployments.tShare.address, provider, 'MSHARE');
     this.TBOND = new ERC20(deployments.tBond.address, provider, 'MBOND');
-    this.TOMBWAVX = new ERC20('0x504183690063734eAAd4f53b77729266b28E3b60', provider, 'MSC-AVAX-LP');
-    this.TSHAREWAVX = new ERC20('0x190a83FdaC8560d0e6ED2ab00dDE62D648A46747', provider, 'MSHARE-A-LP');
+    this.TOMBWAVX = new ERC20('0xbC3E75B872BC1a293002f915d0ABb7b66E89D91d', provider, 'MSC-AVAX-LP');
+    this.TSHAREWAVX = new ERC20('0xf92fdbde85fea68b6a549b98e50b6a54cff8b3f5', provider, 'MSHARE-A-LP');
     this.AVAX = this.externalTokens['WAVAX'];
 
     // Uniswap V2 Pair
@@ -285,11 +285,11 @@ export class TombFinance {
     const rewardPerSecond = await poolContract.mSharePerSecond();
 
     if (depositTokenName.startsWith('MSC-AVAX')) {
-      return rewardPerSecond.mul(30000).div(59500);
+      return rewardPerSecond.mul(35700).div(59500);
     } else if (depositTokenName.startsWith('MSHARE-AVAX')) {
-      return rewardPerSecond.mul(24000).div(59500);
+      return rewardPerSecond.mul(23800).div(59500);
     } else {
-      return rewardPerSecond.mul(5500).div(59500)
+      return rewardPerSecond.div(4)
     }
   }
 

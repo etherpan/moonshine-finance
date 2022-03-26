@@ -622,9 +622,6 @@ contract MscGenesisRewardPool {
     address public feeWallet1 = 0x1a3F4CCDE972A7686B8d82fd3a33266dAe4A6FfC;
     address public feeWallet2 = 0x1234b0b2E3e91202f9A2437B6B0813857E111486;
 
-    mapping (address => bool) public whiteListed;
-    uint256  public constant whiteListPeriod = 10800; 
-
     event Deposit(address indexed user, uint256 indexed pid, uint256 amount);
     event Withdraw(address indexed user, uint256 indexed pid, uint256 amount);
     event EmergencyWithdraw(address indexed user, uint256 indexed pid, uint256 amount);
@@ -652,20 +649,6 @@ contract MscGenesisRewardPool {
         for (uint256 pid = 0; pid < length; ++pid) {
             require(poolInfo[pid].token != _token, "MscGenesisPool: existing pool?");
         }
-    }
-
-    function addMultipleAccountsToWhiteList(address[] calldata _accounts, bool _value) public onlyOperator {
-        for(uint256 i = 0; i < _accounts.length; i++) {
-            whiteListed[_accounts[i]] = _value;
-        }
-    }
-
-    function addWhiteList(address _account) public onlyOperator {
-        whiteListed[_account] = true;
-    }
-    
-    function removeWhiteList(address _account) public onlyOperator {
-        whiteListed[_account] = false;
     }
 
     // Add a new token to the pool. Can only be called by the owner.
@@ -773,9 +756,6 @@ contract MscGenesisRewardPool {
     // Deposit LP tokens.
     function deposit(uint256 _pid, uint256 _amount) public {
         address _sender = msg.sender;
-        if( block.timestamp < poolStartTime.add(whiteListPeriod) ) {
-            require(whiteListed[_sender], 'You are not whitelisted');
-        }
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][_sender];
         updatePool(_pid);
