@@ -179,6 +179,7 @@ const Home = () => {
                   Genesis Pools Launch In: <ProgressCountdown base={moment().toDate()} hideBar={true} deadline={from} description="Pool Start" />
                 </div> : null 
               }
+              <br/>
               <Button target="_blank" href="https://discord.gg/9BV3bTd646" style={{ marginTop: '20px', background:'#5865f2', padding:'8px 15px'  }}>
                 <img alt="discord" src={DiscordImage} className={classes.img} style={{marginRight:'10px', width: '18px'}}/>
                 Discord
